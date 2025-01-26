@@ -1,0 +1,471 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: header;
+  background-color: rgb(209, 162, 9);
+  padding: 30px;
+  height: 40.5px;
+  height: 70px;
+}
+
+.logo-header {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.iconos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(46, 46, 44);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  color: rgb(240, 245, 248);
+  border: 3px solid white;
+}
+.descripcion{
+  padding-inline: 40px;
+}
+
+
+
+menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: menu;
+  background-color: rgb(238, 241, 47);
+  padding: 10px;
+  /*border: 1px solid black;*/
+}
+.menu-listado-logo {
+  padding-top: 30px;
+}
+.derechos-reservados-menu {
+  text-align: center;
+}
+.menu {
+  font-size: x-large;
+  transition: all 0.5s;
+  text-align: center;
+}
+.menu:hover {
+  font-size: xx-large;
+}
+.listado-menu {
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding-top: 30px;
+}
+ul:hover {
+  color: aliceblue;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  padding-top: 50px;
+  border-radius: 50%;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+}
+
+.foto1 {
+  width: 300px;
+  height: 200px;
+  grid-area: f1;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.f1{
+    text-align: center;
+}
+.foto1:hover{
+  filter: grayscale(0%);
+  width: 350px;
+  height: 250px;
+
+}
+.cr{
+    text-overflow: ellipsis;
+    text-align: center;
+    background-color: rgb(221, 223, 140);
+    color: orange;
+    }
+
+.foto2 {
+  width: 300px;
+  height: 200px;
+  grid-area: f2;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.foto2:hover{
+    filter: grayscale(0%);
+    width: 350px;
+    height: 250px;
+  }
+.mm{
+    text-align: center;
+    text-overflow: ellipsis;
+    background-color: rgb(221, 223, 140);
+    color: orange;
+}
+.foto3 {
+  width: 300px;
+  height: 200px;
+  grid-area: f3;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.foto3:hover{
+    filter: grayscale(0%);
+    width: 350px;
+    height: 250px;
+  }
+
+.ma{
+    text-align: center;
+    text-overflow: ellipsis;
+    background-color: rgb(221, 223, 140);
+    color: orange;
+}
+.foto4 {
+  width: 300px;
+  height: 200px;
+  grid-area: f4;
+  padding-top: 100px;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.foto4:hover{
+    filter: grayscale(0%);
+    width: 350px;
+    height: 250px;
+  }
+.ve{
+    text-align: center;
+    text-overflow: ellipsis; 
+    background-color: rgb(221, 223, 140);
+    color: orange;
+}
+.foto5 {
+  width: 300px;
+  height: 200px;
+  grid-area: f5;
+  padding-top: 100px;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.foto5:hover{
+    filter: grayscale(0%);
+    width: 350px;
+    height: 250px;
+  }
+.lu{
+    text-align: center;
+    text-overflow: ellipsis; 
+    background-color: rgb(221, 223, 140);
+    color: orange;
+}
+.foto6 {
+  width: 300px;
+  height: 200px;
+  grid-area: f6;
+  padding-top: 100px;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.foto6:hover{
+    filter: grayscale(0%);
+    width: 350px;
+    height: 250px;
+  }
+.il{
+    text-align: center;
+    text-overflow: ellipsis; 
+    background-color: rgb(221, 223, 140);
+    color: orange;
+}
+
+section {
+  display: grid;
+  grid-template-areas:
+    "f1 f2 f3"
+    "f4 f5 f6";
+  justify-content: space-around;
+  padding-top: 100px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  grid-area: footer;
+  background-color: rgb(209, 162, 9);
+  padding: 10px;
+  height: 240px;
+}
+.redes-sociales{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.origen-empresa {
+  padding-top: 50px;
+  text-align: center;
+}
+.origen-contacto {
+  padding-top: 50px;
+  text-align: center;
+}
+.origen-siguenos {
+  padding-top: 50px;
+}
+.derechos-reservados-footer {
+  display: none;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "menu header"
+    "menu nav"
+    "menu main"
+    "menu footer";
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 2fr 6fr 2fr;
+}
+@media (max-width: 576px) {
+  body {
+    grid-template-areas:
+      "menu"
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 100px 700px 200px;
+    height: 100%;
+  }
+  menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    grid-area: menu;
+    background-color: rgb(200, 202, 55);
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .derechos-reservados-menu {
+    display: none;
+  }
+  .listado-menu {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    border-radius: 50%;
+    opacity: 60%;
+    transition: opacity 1s;
+  }
+  .logo:hover{
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    border-radius: 50%;
+    opacity: 100%;
+  }
+  .descripcion{
+    display: none;
+  }
+
+  section {
+    grid-template-areas:
+      "f1"
+      "f2"
+      "f3"
+      "f4"
+      "f5"
+      "f6";
+    justify-content: space-around;
+    padding-top: 40px;
+  }
+  .foto1 {
+    width: 200px;
+    height: 100px;
+    grid-area: f1;
+    padding-right: 40px;
+    
+  }
+  .foto1:hover{
+    width: 250px;
+    height: 150px;
+  
+  }
+  .cr{
+    background-color: white;
+    padding-right: 40px;
+  }
+  .foto2 {
+    width: 200px;
+    height: 100px;
+    grid-area: f2;
+  }
+  .foto2:hover{
+    width: 250px;
+    height: 150px;
+  }
+  .mm{
+    background-color: white;
+    padding-right: 30px;
+    
+  }
+  .foto3 {
+    width: 200px;
+    height: 100px;
+    grid-area: f3;
+  }
+  .foto3:hover{
+    width: 250px;
+    height: 150px;
+  }
+  .ma{
+    background-color: white;
+    padding-right: 40px;
+  }
+  .foto4 {
+    width: 200px;
+    height: 100px;
+    grid-area: f4;
+    padding-top: 0;
+  }
+  .foto4:hover{
+    width: 250px;
+    height: 150px;
+  }
+  .ve{
+    background-color: white;
+    padding-right: 30px;
+  }
+  .foto5 {
+    width: 200px;
+    height: 100px;
+    grid-area: f5;
+    padding-top: 0;
+  }
+  .foto5:hover{
+    width: 250px;
+    height: 150px;
+  }
+  .lu{
+    background-color: white;
+    padding-right: 40px;
+  }
+  .foto6 {
+    width: 200px;
+    height: 100px;
+    grid-area: f6;
+    padding-top: 0;
+  }
+  .foto6:hover{
+    width: 250px;
+    height: 150px;
+  }
+  .il{
+    background-color: white;
+    padding-right: 40px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: footer;
+    background-color: rgb(209, 162, 9);
+    padding: 10px;
+    padding-top: 100px;
+    margin-top: 200px;
+    height: 500px;
+  }
+  .redes-sociales{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .origen-siguenos {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .derechos-reservados-footer {
+    display: ruby;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    height: 50px;
+  }
+  section {
+    grid-template-areas:
+      "f1 f2"
+      "f3 f4"
+      "f5 f6";
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .foto1 {
+    width: 200px;
+    height: 200px;
+    grid-area: f1;
+  }
+  .foto2 {
+    width: 200px;
+    height: 200px;
+    grid-area: f2;
+  }
+  .foto3 {
+    width: 200px;
+    height: 200px;
+    grid-area: f3;
+  }
+  .foto4 {
+    width: 200px;
+    height: 200px;
+    grid-area: f4;
+    padding-top: 0;
+  }
+  .foto5 {
+    width: 200px;
+    height: 200px;
+    grid-area: f5;
+    padding-top: 0;
+  }
+  .foto6 {
+    width: 200px;
+    height: 200px;
+    grid-area: f6;
+    padding-top: 0;
+  }
+}
